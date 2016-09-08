@@ -16,4 +16,10 @@ public class LeapyearTest{
     Leapyear leapyear = new Leapyear();
     assertEquals(false, leapyear.leapyearRun(1900));
   }
+
+  @Test
+  public void leapyearRun_isdivisbleby400_true() {
+    Leapyear leapyear = new Leapyear();
+    assertEquals(true, leapyear.leapyearRun(2000));
+  }
 }
